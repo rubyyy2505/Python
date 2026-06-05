@@ -21,7 +21,7 @@ class Parent:
 
 # Child class inheriting Parent
 class Student(Parent):
-    def _init_(self, student_name, roll_no, father_name, mother_name):
+    def __init__(self, student_name, roll_no, father_name, mother_name):
         super()._init_(father_name, mother_name)
         self.__student_name = student_name
         self.__roll_no = roll_no
@@ -48,13 +48,13 @@ class Student(Parent):
 
 
 # Creating object
-s1 = Student("Ram", 101, "Hari Prasad", "Sita Devi")
+s1 = Student("Rubina Maharjan", 101, "Nanibabu Maharjan", "Ramila Maharjan")
 
 # Display details
 s1.display_details()
 
 # Modifying data using setter methods
-s1.set_student_name("Shyam")
+s1.set_student_name("Nishesh Maharjan")
 s1.set_roll_no(102)
 
 print("\nAfter Updating:")
